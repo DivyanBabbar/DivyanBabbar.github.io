@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101928">
+  <meta name="description" content="Divyan Babbar's software portfolio: full-stack systems, applied AI, security, and ECE projects.">
+  <meta property="og:title" content="Divyan Babbar | Software Portfolio">
+  <meta property="og:description" content="Full-stack software, applied AI, security, and ECE projects.">
+  <meta property="og:type" content="website">
+  <title>Divyan Babbar | Software Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Divyan Babbar home"><span class="brand-mark">DB</span><span>Divyan Babbar</span></a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/DivyanBabbar" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> ECE student <span class="dot">/</span> software builder <span class="dot">/</span> class of 2028</p>
+        <h1 id="hero-title">Building reliable software, from the interface down to the data.</h1>
+        <p class="hero-lede">I'm Divyan, an Electronics and Communication Engineering student at JIIT. I build and study full-stack systems, applied AI, and security tools, with a focus on making behavior clear and testable.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://github.com/DivyanBabbar" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="focus-line"><span class="focus-label">Current focus</span><span>API design</span><span>transaction correctness</span><span>practical AI</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-card">
+          <span class="hero-card-label">BUILD LOG</span>
+          <span class="hero-card-line"><i class="status status-green"></i> validate the input</span>
+          <span class="hero-card-line"><i class="status status-blue"></i> make retries safe</span>
+          <span class="hero-card-line"><i class="status status-orange"></i> test the edge case</span>
+          <span class="hero-card-foot">small systems, carefully rebuilt</span>
+        </div>
+        <span class="art-chip chip-top">ECE × software</span>
+        <span class="art-chip chip-bottom">13 public projects</span>
+      </div>
+    </section>
+
+    <section class="journey-wrap" aria-label="Project progression">
+      <div class="journey wrap">
+        <span class="journey-label">The progression</span>
+        <span class="journey-step">C++ foundations</span><span class="journey-arrow" aria-hidden="true">→</span>
+        <span class="journey-step">browser apps</span><span class="journey-arrow" aria-hidden="true">→</span>
+        <span class="journey-step">APIs and data</span><span class="journey-arrow" aria-hidden="true">→</span>
+        <span class="journey-step journey-highlight">MerchantFlow</span>
+      </div>
+    </section>
+
+    <section class="projects-section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow section-eyebrow">SELECTED WORK</p>
+          <h2 id="projects-title">Projects, with the edges included.</h2>
+          <p class="section-lede">A mix of finished learning projects and prototypes. Simulated behavior is labeled as simulated; the repository has the code and setup details.</p>
+        </div>
+        <a class="text-link" href="https://github.com/DivyanBabbar?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="project-tools">
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All <span>13</span></button>
+          <button class="filter" type="button" data-filter="fullstack" aria-pressed="false">Full stack</button>
+          <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI &amp; voice</button>
+          <button class="filter" type="button" data-filter="security" aria-pressed="false">Security</button>
+          <button class="filter" type="button" data-filter="systems" aria-pressed="false">Systems</button>
+          <button class="filter" type="button" data-filter="foundations" aria-pressed="false">Foundations</button>
+        </div>
+        <label class="search-box"><span class="sr-only">Search projects</span><span aria-hidden="true">⌕</span><input id="project-search" type="search" placeholder="Search projects" autocomplete="off"></label>
+      </div>
+      <p class="results-count" id="results-count" aria-live="polite">Showing 13 projects</p>
+
+      <div class="project-grid" id="project-grid">
+        <article class="project-card project-featured" data-categories="fullstack systems" data-search="merchantflow payments checkout ledger react node express postgres transactions idempotency">
+          <div class="card-top"><span class="project-index">01</span><span class="project-type">FEATURED · FULL STACK</span></div>
+          <h3>MerchantFlow</h3>
+          <p class="card-description">A merchant checkout and ledger simulator built around correctness: safe retries, inventory contention, payment state, and balanced ledger entries.</p>
+          <p class="project-boundary">Local simulator only; it does not process real payments or card data.</p>
+          <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Testing</span></div>
+          <div class="card-bottom"><span class="card-note">API + database + dashboard</span><a href="https://github.com/DivyanBabbar/merchantflow" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="security systems" data-search="sentinel soc security events correlation incident explainable containment simulation">
+          <div class="card-top"><span class="project-index">02</span><span class="project-type">SECURITY SYSTEMS</span></div>
+          <h3>Sentinel SOC</h3>
+          <p class="card-description">A small security operations platform for event ingestion, explainable correlation, incident timelines, and analyst-reviewed response.</p>
+          <p class="project-boundary">Containment actions are simulated and require approval.</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Rules</span></div>
+          <div class="card-bottom"><span class="card-note">Detection with a human in the loop</span><a href="https://github.com/DivyanBabbar/sentinel-soc" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="systems security" data-search="trace lens observability microservice incident root cause deterministic signals evidence timeline">
+          <div class="card-top"><span class="project-index">03</span><span class="project-type">OBSERVABILITY</span></div>
+          <h3>TraceLens</h3>
+          <p class="card-description">An evidence-first incident analysis tool that correlates service signals and ranks likely causes with a deterministic timeline.</p>
+          <div class="tags"><span>Python</span><span>Telemetry</span><span>SQLite</span><span>Testing</span></div>
+          <div class="card-bottom"><span class="card-note">Explain the evidence, not just the guess</span><a href="https://github.com/DivyanBabbar/trace-lens" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="ai systems" data-search="opspilot anomaly detection infrastructure remediation approval safe simulation">
+          <div class="card-top"><span class="project-index">04</span><span class="project-type">AI · OPERATIONS</span></div>
+          <h3>OpsPilot</h3>
+          <p class="card-description">A safety-gated operations agent that detects anomalies and proposes remediation for human approval.</p>
+          <p class="project-boundary">Remediation is simulated; this is not connected to production infrastructure.</p>
+          <div class="tags"><span>Python</span><span>Anomaly detection</span><span>Approval gate</span></div>
+          <div class="card-bottom"><span class="card-note">Prototype</span><a href="https://github.com/DivyanBabbar/opspilot" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="ai security" data-search="netsentinel network security soc copilot llm rag triage logs response prototype">
+          <div class="card-top"><span class="project-index">05</span><span class="project-type">AI · SECURITY</span></div>
+          <h3>NetSentinel SOC Copilot</h3>
+          <p class="card-description">An early LLM and retrieval prototype for triaging network security logs and proposing analyst-approved response actions.</p>
+          <p class="project-boundary">Prototype; model-backed evaluations are not presented as benchmark results.</p>
+          <div class="tags"><span>Python</span><span>LLM / RAG</span><span>Security logs</span></div>
+          <div class="card-bottom"><span class="card-note">Human-approved actions</span><a href="https://github.com/DivyanBabbar/netsentinel-ai-soc-copilot" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="ai systems" data-search="deep research agent citations research web search ui api cli history source grounded reports">
+          <div class="card-top"><span class="project-index">06</span><span class="project-type">AI · RESEARCH</span></div>
+          <h3>Deep Research Agent</h3>
+          <p class="card-description">A research workflow with web search, source-grounded reports, a web interface, API, CLI, and persistent history.</p>
+          <div class="tags"><span>Python</span><span>Web app</span><span>API</span><span>Citations</span></div>
+          <div class="card-bottom"><span class="card-note">Sources stay attached to findings</span><a href="https://github.com/DivyanBabbar/deep-research-agent" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="security systems" data-search="waypoint browser automation agent playwright human approval ssrf private network safety">
+          <div class="card-top"><span class="project-index">07</span><span class="project-type">AUTOMATION · SAFETY</span></div>
+          <h3>Waypoint</h3>
+          <p class="card-description">A browser automation agent that plans actions, asks for human approval, and includes safeguards for risky navigation.</p>
+          <div class="tags"><span>Python</span><span>Playwright</span><span>Approval flow</span></div>
+          <div class="card-bottom"><span class="card-note">Safety-first prototype</span><a href="https://github.com/DivyanBabbar/browser-automation-agent" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="ai" data-search="deepfake detector vision transformer pytorch computer vision real fake classification">
+          <div class="card-top"><span class="project-index">08</span><span class="project-type">COMPUTER VISION</span></div>
+          <h3>Deepfake Image Detector</h3>
+          <p class="card-description">A PyTorch training project fine-tuning a pretrained Vision Transformer for real-versus-manipulated image classification.</p>
+          <p class="project-boundary">No accuracy claim is shown without a reproducible run and evaluation details.</p>
+          <div class="tags"><span>PyTorch</span><span>ViT</span><span>Hugging Face</span></div>
+          <div class="card-bottom"><span class="card-note">DeLTA capstone</span><a href="https://github.com/DivyanBabbar/deepfake_detector" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="ai fullstack" data-search="voice assistant platform java gateway python ai service react console voice realtime">
+          <div class="card-top"><span class="project-index">09</span><span class="project-type">VOICE · MULTI-SERVICE</span></div>
+          <h3>AI Voice Assistant</h3>
+          <p class="card-description">A multi-service voice assistant codebase spanning a Java gateway, Python AI service, and React console.</p>
+          <p class="project-boundary">See repository history and metadata for contributor attribution; performance claims are not listed here.</p>
+          <div class="tags"><span>Java</span><span>Python</span><span>React</span><span>Voice AI</span></div>
+          <div class="card-bottom"><span class="card-note">Codebase overview</span><a href="https://github.com/DivyanBabbar/AI-Voice-Assistant" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="ai" data-search="agentic qa helper rule based fastapi query classifier dictionary lookup sliding window session memory">
+          <div class="card-top"><span class="project-index">10</span><span class="project-type">API · TOOL USE</span></div>
+          <h3>Agentic Q&amp;A Helper</h3>
+          <p class="card-description">A rule-based FastAPI question-answer service with query classification, a dictionary lookup tool, and session-scoped memory.</p>
+          <p class="project-boundary">Rule-based; not a generative AI or LLM application.</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>REST</span></div>
+          <div class="card-bottom"><span class="card-note">Small API, clear boundaries</span><a href="https://github.com/DivyanBabbar/Agentic-AI-Q-A-Helper" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="foundations fullstack" data-search="study queue task app browser javascript html css accessible local storage validation">
+          <div class="card-top"><span class="project-index">11</span><span class="project-type">WEB FOUNDATIONS</span></div>
+          <h3>Study Queue</h3>
+          <p class="card-description">A responsive, keyboard-friendly task app with search and filters, validated versioned local storage, and safe rendering of user text.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="card-bottom"><span class="card-note">Vanilla browser app</span><a href="https://github.com/DivyanBabbar/study-queue" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="foundations systems" data-search="pocket ledger c++17 cli expense income money integer paise csv validation tests">
+          <div class="card-top"><span class="project-index">12</span><span class="project-type">C++ · DATA</span></div>
+          <h3>Pocket Ledger</h3>
+          <p class="card-description">A C++17 command-line income and expense tracker using integer paise, CSV persistence, input validation, monthly summaries, and tests.</p>
+          <div class="tags"><span>C++17</span><span>CMake</span><span>CSV</span></div>
+          <div class="card-bottom"><span class="card-note">Data and persistence fundamentals</span><a href="https://github.com/DivyanBabbar/pocket-ledger" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card" data-categories="foundations systems" data-search="dsa cpp data structures algorithms arrays linked lists stacks queues trees bst avl heaps">
+          <div class="card-top"><span class="project-index">13</span><span class="project-type">C++ · FUNDAMENTALS</span></div>
+          <h3>Data Structures in C++</h3>
+          <p class="card-description">A concept-by-concept practice repository covering arrays, linked lists, stacks, queues, trees, BSTs, AVL trees, and heaps.</p>
+          <div class="tags"><span>C++</span><span>Data structures</span><span>Algorithms</span></div>
+          <div class="card-bottom"><span class="card-note">Interview practice</span><a href="https://github.com/DivyanBabbar/Dsa-cpp" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <p class="no-results" id="no-results" hidden>No projects match that search. Try another keyword or filter.</p>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-grid wrap">
+        <div><p class="eyebrow section-eyebrow">ABOUT</p><h2 id="about-title">ECE perspective.<br>Software habits.</h2></div>
+        <div class="about-copy">
+          <p>I'm studying Electronics and Communication Engineering at Jaypee Institute of Information Technology, graduating in 2028. I like projects where the details matter: how a system handles retries, invalid input, duplicate events, or an action that needs human review.</p>
+          <p>My projects move from C++ data handling and browser fundamentals toward APIs, PostgreSQL, applied AI, and security. I'm also interested in embedded systems, IoT, and edge AI, which I plan to explore through software simulations until I have hardware access.</p>
+          <div class="about-links"><a href="mailto:divyanbabbar453@gmail.com">Email me <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/divyan-babbar-255415394/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/DivyanBabbar" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer wrap"><span>Divyan Babbar</span><span>Built with HTML, CSS, and JavaScript.</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
+
