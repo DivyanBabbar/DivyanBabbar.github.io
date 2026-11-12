@@ -9,3 +9,6 @@
 @media(max-width:650px){.wrap{width:min(100% - 32px,520px)}.nav{height:62px}.nav-links{gap:15px}.nav-links a{font-size:11px}.hero{grid-template-columns:1fr;padding-block:55px 50px}.hero h1{font-size:47px}.hero-lede{font-size:14px}.hero-art{height:260px}.journey{padding-block:15px;justify-content:flex-start;flex-wrap:wrap;gap:7px 10px}.journey-label{width:100%;margin:0 0 2px}.journey-step{font-size:10px}.projects-section{padding-block:62px 68px}.section-heading{align-items:start;flex-direction:column;gap:12px}.project-tools{align-items:stretch;flex-direction:column}.search-box{width:100%}.filters{gap:4px}.filter{padding:7px 9px}.project-grid{grid-template-columns:1fr}.project-card{min-height:0}.about-section{padding-block:55px}.about-grid{grid-template-columns:1fr;gap:25px}.footer{padding-block:18px;flex-wrap:wrap}.footer span:nth-child(2){order:3;width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 
+.project-card[hidden]{display:none}
+
+
