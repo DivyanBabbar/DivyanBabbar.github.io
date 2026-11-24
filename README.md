@@ -8,7 +8,7 @@ Open `index.html` in a browser. Project search and category filters run in the b
 
 ## Project accuracy
 
-Project descriptions link to their public repositories. Simulated payment and remediation flows are labeled as simulations. The voice assistant entry describes the codebase and points to repository metadata for attribution.
+Project descriptions link to their public repositories. Simulated payment and remediation flows are labeled as simulations. The selected projects lead with MerchantFlow, the Express APIs, two browser apps and Pocket Ledger.
 
 ## Deployment
 
